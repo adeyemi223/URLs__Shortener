@@ -3,7 +3,7 @@ import {
   getFirestore,
   type Firestore,
   collection,
-  getDocs,
+  // getDocs,
   onSnapshot,
 } from "firebase/firestore";
 import { ShortenResponse } from "../api/models/shorten.model";

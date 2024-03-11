@@ -25,17 +25,16 @@ export default function HeroForm() {
       })
       .then(async ({ data }) => {
         setShortUrl(data.link);
-        await Database.instance.saveLinkToHistories(user!.uid,data);
+        await Database.instance.saveLinkToHistories(user!.uid, data);
       })
       .finally(() => setIsLoading(false));
   };
-
 
   const onBack = () => {
     setShortUrl(null);
     setLongURL(null);
     setIsLoading(false);
-  }
+  };
 
   return (
     <section id="formPricing">
@@ -94,7 +93,9 @@ export default function HeroForm() {
               <input type="text" value={shortUrl!} disabled />
             </div>
             <div>
-              <button onClick={onBack}>Generate new Link</button>
+              <button className="Formbtnn" onClick={onBack}>
+                Generate new Link
+              </button>
             </div>
           </div>
         </div>

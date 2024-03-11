@@ -472,6 +472,17 @@ form > .form input::placeholder {
   border-radius: 8px;
 }
 
+.Formbtnn {
+  width: 100%;
+  padding: 0.5rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: normal;
+  border-radius: 20px;
+  border: 1px solid #e7e9eb;
+  background: #e7e9eb;
+  text-transform: capitalize;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);

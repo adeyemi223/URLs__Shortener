@@ -8,6 +8,10 @@ export default function MyUrl() {
   return (
     <>
       <section className="URLs">
+        <h1>My URLs</h1>
+        <br />
+        <br />
+        <br />
         <button onClick={() => history.back()}>Back</button>
         {histories.map((history) => (
           <div>

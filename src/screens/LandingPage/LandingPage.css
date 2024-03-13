@@ -481,7 +481,7 @@ form > .form input::placeholder {
   border: 1px solid #e7e9eb;
   background: #e7e9eb;
   text-transform: capitalize;
-  color: #e7e9eb;
+  color: #000;
   cursor: pointer;
 }
 

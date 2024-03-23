@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# URLs__Shortener: A Modern URL Shortener
+URLs__Shortener is a simple and efficient URL shortener built using React, Vite, and Firebase. It allows users to create short links for long URLs, making them easier to share and manage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+**Shorten URLs**: Quickly generate short links for long URLs.
+**Secure**: Firebase authentication ensures secure access to link management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+**Clone the Repository:**
+git clone https://github.com/your-username/fire-short.git
+cd fire-short
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Install Dependencies:**
+npm install
 
-- Configure the top-level `parserOptions` property like this:
+**Set Up Firebase:**
+Create a new Firebase project on the Firebase Console.
+Enable Firestore and Authentication services.
+Obtain your Firebase configuration (API keys, project ID, etc.).
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+**Configure Firebase:**
+Create a .env file in the root directory.
+Add your Firebase configuration:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+REACT_APP_FIREBASE_API_KEY=your-api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
+REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+REACT_APP_FIREBASE_APP_ID=your-app-id
+
+**Run the App Locally:**
+npm run dev
+
+Authenticate with Firebase:
+firebase login
+
+Initialize Firebase for your project:
+firebase init
+
+Deploy the app:
+netlify deploy
